@@ -6,5 +6,5 @@ type Course struct {
 	Description string `json:"description"`
 	Price       int    `json:"price"`
 	Tutor       Tutor  `json:"tutor"`
-	Quiz        Quiz   `json:"quiz"`
+	Quizes      []Quiz `json:"quiz"`
 }
