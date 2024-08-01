@@ -9,6 +9,7 @@ import (
 	"github.com/josevitorrodriguess/e-learning/internal/config/logger"
 )
 
+
 func SetupDB() (*sqlx.DB, error) {
 	dsn := "root:12345@tcp(localhost:3306)/elearning?charset=utf8&parseTime=True&loc=Local"
 	conn, err := sqlx.Open("mysql", dsn)
@@ -40,7 +41,6 @@ func CloseConnection(conn *sqlx.DB) {
 	}
 }
 
-var ()
 
 func realizeMigrations(conn *sqlx.DB) error {
 	logger.Info("running migrations...")

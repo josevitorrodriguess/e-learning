@@ -3,7 +3,7 @@ package models
 type Quiz struct {
 	ID        int    `json:"id"`
 	Subject   string `json:"subject"`
-	Creator   Tutor  `json:"creator"`
+	Creator   User  `json:"creator"`
 	Questions []Test `json:"questions"`
 }
 
